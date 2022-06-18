@@ -1,2 +1,2 @@
 # sweefy
-Leightweigt hydration build on doctrine DBAL
+Leightweigt hydration for doctrine DBAL

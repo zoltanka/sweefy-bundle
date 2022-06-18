@@ -1,0 +1,42 @@
+parameters:
+
+services:
+    ZFekete\Sweefy\Service\RSOMetaDataBuilder:
+        public: false
+
+    sweefy.service.rso_meta_data_builder:
+        class: ZFekete\Sweefy\Service\RSOMetaDataBuilder
+        public: true
+
+
+    ZFekete\Sweefy\Service\ObjectHydrator:
+        public: false
+        arguments:
+            - '@ZFekete\Sweefy\Service\RSOMetaDataBuilder'
+
+    sweefy.service.object_hydrator:
+        class: '@ZFekete\Sweefy\Service\ObjectHydrator'
+        public: true
+
+    ZFekete\Sweefy\Contract\ObjectHydratorInterface: '@ZFekete\Sweefy\Service\ObjectHydrator'
+
+
+    ZFekete\Sweefy\Service\ResultHydrator:
+        autowire: true
+        public: false
+
+    sweefy.service.result_hydrator:
+        class: ZFekete\Sweefy\Service\ResultHydrator
+        public: true
+
+    ZFekete\Sweefy\Contract\ResultHydratorInterface: '@ZFekete\Sweefy\Service\ResultHydrator'
+
+
+    ZFekete\Sweefy\Service\Sweefy:
+        autowire: true
+        public: false
+
+    sweefy.service.sweefy:
+        class: ZFekete\Sweefy\Service\Sweefy
+        public: true
+
