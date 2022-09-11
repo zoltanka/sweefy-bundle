@@ -1,6 +1,8 @@
 {
     "name": "zfekete/sweefy",
+    "version": "0.0.1",
     "description": "Light-weight hydration build on doctrine DBAL.",
+    "license": "MIT",
     "type": "symfony-bundle",
     "autoload": {
         "psr-4": {
