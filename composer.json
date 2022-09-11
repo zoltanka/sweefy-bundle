@@ -1,5 +1,5 @@
 {
-    "name": "zfekete/sweefy",
+    "name": "zfekete/sweefy-bundle",
     "version": "0.0.1",
     "description": "Light-weight hydration build on doctrine DBAL.",
     "license": "MIT",
