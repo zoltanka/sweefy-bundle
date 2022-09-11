@@ -17,11 +17,11 @@ class SweefyTest extends TestCase
     public function setUp(): void
     {
         $connectionParams = [
-            'dbname' => 'default',
-            'user' => 'root',
+            'dbname'   => 'default',
+            'user'     => 'root',
             'password' => 'root',
-            'host' => 'mysql',
-            'driver' => 'pdo_mysql',
+            'host'     => 'mysql',
+            'driver'   => 'pdo_mysql',
         ];
 
         $conn = DriverManager::getConnection($connectionParams);
