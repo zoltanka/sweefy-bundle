@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy\Service;
+namespace ZFekete\SweefyBundle\Service;
 
-use ZFekete\Sweefy\Contract\ObjectHydratorInterface;
-use ZFekete\Sweefy\Exception\Hydrator\MetaDataCollector\ParseException;
-use ZFekete\Sweefy\Exception\Hydrator\ObjectHydratorException;
-use ZFekete\Sweefy\VO\ArgumentMetaData;
-use ZFekete\Sweefy\VO\ClassMetaData;
+use ZFekete\SweefyBundle\Contract\ObjectHydratorInterface;
+use ZFekete\SweefyBundle\Exception\Hydrator\MetaDataCollector\ParseException;
+use ZFekete\SweefyBundle\Exception\Hydrator\ObjectHydratorException;
+use ZFekete\SweefyBundle\VO\ArgumentMetaData;
+use ZFekete\SweefyBundle\VO\ClassMetaData;
 use Closure;
 use InvalidArgumentException;
 use function array_keys;

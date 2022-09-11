@@ -1,16 +1,16 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy\Service;
+namespace ZFekete\SweefyBundle\Service;
 
-use ZFekete\Sweefy\Enum\Query\Type;
-use ZFekete\Sweefy\Exception\NonUniqueException;
-use ZFekete\Sweefy\Exception\NoResultException;
+use ZFekete\SweefyBundle\Enum\Query\Type;
+use ZFekete\SweefyBundle\Exception\NonUniqueException;
+use ZFekete\SweefyBundle\Exception\NoResultException;
 use BackedEnum;
 use Doctrine\DBAL\Exception as DbalException;
 use Doctrine\DBAL\Result;
-use ZFekete\Sweefy\Exception\SweefyException;
-use ZFekete\Sweefy\Service\Query\TypeResolver;
-use ZFekete\Sweefy\VO\Query\Parameter;
+use ZFekete\SweefyBundle\Exception\SweefyException;
+use ZFekete\SweefyBundle\Service\Query\TypeResolver;
+use ZFekete\SweefyBundle\VO\Query\Parameter;
 use function array_pop;
 use function is_scalar;
 

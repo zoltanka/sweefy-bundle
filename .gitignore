@@ -1,5 +1,8 @@
 /.idea/
-
 /vendor/
-
+/coverage/
 /build/
+/docker/.data/
+/docker/tmp/
+.phpunit.cache
+.phpunit.result.cache

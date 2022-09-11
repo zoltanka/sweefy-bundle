@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy\VO;
+namespace ZFekete\SweefyBundle\VO;
 
 use Closure;
 use JetBrains\PhpStorm\Immutable;

@@ -1,0 +1,10 @@
+/.idea/
+/.git/
+/coverage/
+/docker/
+!/docker//config/
+/.dockerignore
+/.gitignore
+/Makefile
+*.cache
+*.md

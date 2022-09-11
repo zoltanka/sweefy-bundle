@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy\Service;
+namespace ZFekete\SweefyBundle\Service;
 
-use ZFekete\Sweefy\Contract\ResultHydratorInterface;
+use ZFekete\SweefyBundle\Contract\ResultHydratorInterface;
 use Doctrine\DBAL\Connection;
 
 class Sweefy

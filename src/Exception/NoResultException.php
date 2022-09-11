@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy\Exception;
+namespace ZFekete\SweefyBundle\Exception;
 
 class NoResultException extends ResultException
 {

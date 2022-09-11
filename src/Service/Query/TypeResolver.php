@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy\Service\Query;
+namespace ZFekete\SweefyBundle\Service\Query;
 
 use BackedEnum;
 use DateInterval;
 use DateTimeInterface;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Types\Types;
-use ZFekete\Sweefy\Enum\Query\Type;
+use ZFekete\SweefyBundle\Enum\Query\Type;
 use function is_bool;
 
 class TypeResolver

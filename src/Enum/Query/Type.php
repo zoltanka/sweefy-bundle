@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy\Enum\Query;
+namespace ZFekete\SweefyBundle\Enum\Query;
 
 enum Type
 {

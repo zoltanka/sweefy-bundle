@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy\Contract;
+namespace ZFekete\SweefyBundle\Contract;
 
 interface ObjectHydratorInterface
 {

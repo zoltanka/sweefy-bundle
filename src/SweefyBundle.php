@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy;
+namespace ZFekete\SweefyBundle;
 
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use ZFekete\Sweefy\DependencyInjection\SweefyExtension;
+use ZFekete\SweefyBundle\DependencyInjection\SweefyExtension;
 
 class SweefyBundle extends Bundle
 {

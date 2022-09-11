@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy\Service;
+namespace ZFekete\SweefyBundle\Service;
 
-use ZFekete\Sweefy\Contract\ResultHydratorInterface;
-use ZFekete\Sweefy\Contract\ObjectHydratorInterface;
-use ZFekete\Sweefy\Exception\Hydrator\ObjectHydratorException;
+use ZFekete\SweefyBundle\Contract\ResultHydratorInterface;
+use ZFekete\SweefyBundle\Contract\ObjectHydratorInterface;
+use ZFekete\SweefyBundle\Exception\Hydrator\ObjectHydratorException;
 use Doctrine\DBAL\Exception as DbalException;
 use Doctrine\DBAL\Result;
 

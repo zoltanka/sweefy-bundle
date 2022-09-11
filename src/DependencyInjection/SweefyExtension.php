@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy\DependencyInjection;
+namespace ZFekete\SweefyBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

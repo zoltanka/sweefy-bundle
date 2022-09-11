@@ -1,0 +1,22 @@
+version: '3'
+services:
+    # App
+    app:
+        build:
+            args:
+                BUILD_DEPENDENCIES: 0
+        volumes:
+        - ../:/app
+
+    pma:
+        image: phpmyadmin/phpmyadmin:latest
+        environment:
+            PMA_HOST: 'mysql'
+            PMA_USER: 'root'
+            PMA_PASSWORD: 'root'
+        ports:
+            - "8008:80"
+        depends_on:
+            - mysql
+        networks:
+            - internal

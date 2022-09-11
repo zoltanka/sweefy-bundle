@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy\Exception\Hydrator\MetaDataCollector;
+namespace ZFekete\SweefyBundle\Exception\Hydrator\MetaDataCollector;
 
-use ZFekete\Sweefy\Exception\Hydrator\MetaDataCollectorException;
+use ZFekete\SweefyBundle\Exception\Hydrator\MetaDataCollectorException;
 
 class ParseException extends MetaDataCollectorException
 {

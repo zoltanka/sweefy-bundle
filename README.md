@@ -1,2 +1,2 @@
 # sweefy
-Leightweigt hydration for doctrine DBAL
+A symfony bundle that provides lightweight hydration using doctrine DBAL.

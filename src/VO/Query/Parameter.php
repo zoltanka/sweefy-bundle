@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace ZFekete\Sweefy\VO\Query;
+namespace ZFekete\SweefyBundle\VO\Query;
 
 use JetBrains\PhpStorm\Immutable;
-use ZFekete\Sweefy\Enum\Query\Type;
-use ZFekete\Sweefy\Service\Query\TypeResolver;
+use ZFekete\SweefyBundle\Enum\Query\Type;
+use ZFekete\SweefyBundle\Service\Query\TypeResolver;
 
 #[Immutable]
 class Parameter

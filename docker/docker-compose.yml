@@ -1,0 +1,36 @@
+version: '3'
+services:
+    # App
+    app:
+        labels:
+            app: sweefy
+        build:
+            context: ../
+            dockerfile: docker/Dockerfile
+            args:
+                PHP_VERSION: ${PHP_VERSION:-8.1}
+        environment:
+            APP_ROOT_NAMESPACE: 'ZFekete\SweefyBundle'
+            XDEBUG_MODE: 'debug,coverage'
+            PHP_IDE_CONFIG: 'serverName=app'
+        networks:
+        - internal
+
+    # MySQL
+    mysql:
+        image: mysql:8
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: default
+        volumes:
+            # To have the data saved on the host machine
+            - ./.data:/var/lib/mysql/
+        ports:
+            - '3306'
+        logging:
+            driver: none
+        networks:
+            - internal
+networks:
+    internal:
+        driver: bridge
