@@ -11,7 +11,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "ZFekete\\Sweefy\\Tests\\": "tests/"
+            "ZFekete\\SweefyBundle\\Tests\\": "tests/"
         }
     },
     "authors": [

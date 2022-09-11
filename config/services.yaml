@@ -1,42 +1,42 @@
 parameters:
 
 services:
-    ZFekete\Sweefy\Service\RSOMetaDataBuilder:
+    ZFekete\SweefyBundle\Service\RSOMetaDataBuilder:
         public: false
 
     sweefy.service.rso_meta_data_builder:
-        class: ZFekete\Sweefy\Service\RSOMetaDataBuilder
+        class: ZFekete\SweefyBundle\Service\RSOMetaDataBuilder
         public: true
 
 
-    ZFekete\Sweefy\Service\ObjectHydrator:
+    ZFekete\SweefyBundle\Service\ObjectHydrator:
         public: false
         arguments:
-            - '@ZFekete\Sweefy\Service\RSOMetaDataBuilder'
+            - '@ZFekete\SweefyBundle\Service\RSOMetaDataBuilder'
 
     sweefy.service.object_hydrator:
-        class: '@ZFekete\Sweefy\Service\ObjectHydrator'
+        class: '@ZFekete\SweefyBundle\Service\ObjectHydrator'
         public: true
 
-    ZFekete\Sweefy\Contract\ObjectHydratorInterface: '@ZFekete\Sweefy\Service\ObjectHydrator'
+    ZFekete\SweefyBundle\Contract\ObjectHydratorInterface: '@ZFekete\SweefyBundle\Service\ObjectHydrator'
 
 
-    ZFekete\Sweefy\Service\ResultHydrator:
+    ZFekete\SweefyBundle\Service\ResultHydrator:
         autowire: true
         public: false
 
     sweefy.service.result_hydrator:
-        class: ZFekete\Sweefy\Service\ResultHydrator
+        class: ZFekete\SweefyBundle\Service\ResultHydrator
         public: true
 
-    ZFekete\Sweefy\Contract\ResultHydratorInterface: '@ZFekete\Sweefy\Service\ResultHydrator'
+    ZFekete\SweefyBundle\Contract\ResultHydratorInterface: '@ZFekete\SweefyBundle\Service\ResultHydrator'
 
 
-    ZFekete\Sweefy\Service\Sweefy:
+    ZFekete\SweefyBundle\Service\Sweefy:
         autowire: true
         public: false
 
     sweefy.service.sweefy:
-        class: ZFekete\Sweefy\Service\Sweefy
+        class: ZFekete\SweefyBundle\Service\Sweefy
         public: true
 
